@@ -1,0 +1,19 @@
+Deploying workspace: https://api.mainnet-beta.solana.com
+Upgrade authority: ./my-keypair.json
+Deploying program "gem_farm"...
+Program path: /home/web-dev-02/uday/projects/gemworks-new-v2/target/deploy/gem_farm.so...
+Program Id: GYxFaAG23WQ96hL9KZA3XPJGhwbZWA7JnAJxDbWWRgw3
+
+Deploying program "gem_bank"...
+Program path: /home/web-dev-02/uday/projects/gemworks-new-v2/target/deploy/gem_bank.so...
+Program Id: B125ajDSeCHWeSKdLUsBD6keAuZjEaKfo19PpdjwVDz4
+
+Deploy success
+
+Upgrade Commands
+
+solana address -k /home/web-dev-02/uday/projects/gemworks-new-v2/target/deploy/gem_farm-keypair.json
+anchor upgrade --program-id GYxFaAG23WQ96hL9KZA3XPJGhwbZWA7JnAJxDbWWRgw3 /home/web-dev-02/uday/projects/gemworks-new-v2/target/deploy/gem_farm.so
+
+solana address -k /home/web-dev-02/uday/projects/gemworks-new-v2/target/deploy/gem_bank-keypair.json
+anchor upgrade --program-id B125ajDSeCHWeSKdLUsBD6keAuZjEaKfo19PpdjwVDz4 /home/web-dev-02/uday/projects/gemworks-new-v2/target/deploy/gem_bank.so
